@@ -1,0 +1,238 @@
+@import url(./global.css);
+
+.main__signIn {
+    padding: 24px;
+    max-height: 70%;
+}
+
+.menu {
+    padding: 32px 24px;
+    background: var(--nav-bg-color);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: space-between;
+    background-attachment: scroll;
+}
+
+.menu__logo--image {
+    width: 100px;
+}
+
+.menu__item {
+    font-size: 12px;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    margin-right: 24px;
+}
+
+.menu__item--button {
+    border-radius: 500px;
+    margin-right: 0px;
+}
+
+.button {
+    background-color: var(--tertiary-color);
+    padding: 8px 26px;
+    text-wrap: nowrap;
+}
+
+.button:hover {
+    background-color: var(--btn-link-bg-color);
+    color: var(--btn-link-color);
+    transition: background-color 1s, color 1s;
+}
+
+
+.login {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 8px;
+    background-color: var(--form-bg-color);
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+
+}
+
+.login__title {
+    font-family: Raleway, sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+
+    margin-bottom: 24px;
+}
+
+.login__label {
+    font-family: Raleway, sans-serif;
+    color: white;
+}
+
+.login__field {
+    background-color: var(--form-field-bg-color);
+    border: var(--form-field-border);
+    border-radius: 8px;
+    border-width: 1px;
+    font-size: 1rem;
+    color: white;
+    font-family: Raleway, sans-serif;
+
+    padding: 16px;
+}
+
+.login__field::placeholder {
+    color: var(--form-field-placeholder);
+    font-size: 1rem;
+    font-family: Raleway, sans-serif;
+}
+
+.login__field:invalid {
+    border-color: var(--form-field-error);
+}
+
+.login__button {
+    font-family: Raleway, sans-serif;
+    color: white;
+    background-image: var(--btn-bg-color-gradient);
+    background-size: 250%;
+    background-color: transparent;
+    letter-spacing: 4px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    width: 157px;
+    cursor: pointer;
+    outline: 3px solid transparent;
+    transition: background 1s, outline 1s, transform 1s;
+
+
+
+    padding: 16px 40px;
+    border-radius: 40px;
+    border: none;
+    border-style: none;
+    margin-bottom: 24px;
+}
+
+.login__button:hover {
+    background-position: 100%;
+    outline: 2px solid var(--secondary-color);
+    transform: scale(1.05);
+}
+
+
+
+.login__link {
+    color: white;
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--link-color);
+}
+
+.login__actions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.footer {
+    text-align: center;
+    padding: 24px;
+    margin: 0 auto;
+}
+
+.footer__link {
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--link-color);
+    letter-spacing: 2px;
+
+    margin: 0px 14px 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__link:hover {
+    color: var(--btn-link-bg-color);
+
+    transition: color 1s;
+}
+
+.text--small {
+    margin: 16px 0;
+    color: var(--link-color);
+    font-family: Quicksand, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 100;
+}
+
+.footer__social {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+
+@media screen and (min-width: 481px) {
+
+    body {
+        background-image: url(../images/background-movies-series.png);
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .menu {
+        padding: 12px 16px;
+        flex-direction: row;
+        gap: 0px;
+    }
+
+    .menu__logo--image {
+        width: 160px;
+    }
+
+    .menu__item {
+        margin-right: 24px;
+    }
+
+    .login__actions {
+        display: inline-block;
+    }
+
+    .login__link {
+        margin-left: 24px;
+    }
+
+    .login__button {
+        margin-bottom: 0px;
+
+    }
+
+    .footer__link {
+        display: inline-block;
+        margin: 0px 14px;
+    }
+
+    .footer {
+        padding-top: 0px;
+    }
+
+
+
+
+}
